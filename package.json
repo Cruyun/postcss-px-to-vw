@@ -1,0 +1,30 @@
+{
+  "name": "postcss-px-to-vh",
+  "version": "1.0.0",
+  "description": "A plugin for PostCSS that converts pixel units to vh units",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cruyun/postcss-px-to-vh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cruyun/postcss-px-to-vh/issues"
+  },
+  "homepage": "https://github.com/Cruyun/postcss-px-to-vh#readme",
+  "keywords": [
+    "css",
+    "px",
+    "viewport",
+    "vh",
+    "postcss",
+    "postcss-plugin"
+  ],
+  "dependencies": {
+    "postcss": "^6.0.16"
+  }
+}
