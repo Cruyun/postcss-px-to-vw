@@ -21,7 +21,7 @@ module.exports = postcss.plugin('postcss-px-to-vw', function (options) {
 
                 decl.value = decl.value.replace(pxRegex, function(pxSize) {
                     var num = parseInt(pxSize);
-                    var vwNum = num * opts.vwUnit / 100;
+                    var vwNum = num * 100 / opts.vwUnit;
                     return vwNum + 'vw';
                 });
             });
