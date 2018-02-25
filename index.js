@@ -18,7 +18,7 @@ module.exports = postcss.plugin('postcss-px-to-vw', function (options) {
                 const annotation = decl.next();
                 if ( annotation && annotation.type == 'comment' && annotation.text == 'px') return;
 
-                if (decl.value.indexOf('px') != 1) {
+                if (decl.value.indexOf('px') != -1) {
                     decl.value = decl.value.replace(pxRegex, function (pxSize) {
                     var num = parseInt(pxSize);
                     var vwNum = num * 100 / opts.vwUnit;
